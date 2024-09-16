@@ -1,0 +1,7 @@
+Dans Go, la gestion de la mémoire est assurée par un ramasse-miettes11.
+Il n'y a pas de surcharge de méthodes ou d'arithmétique des pointeurs. Enfin, il n'y a pas d'assertions ou d'exceptions. Pour remplacer ces deux derniers, Go fournit les mots clés defer, panic et recover23 qui donnent des mécanismes similaires aux systèmes de gestion des exceptions de langages tels que C++ et Java (mots clés try, catch, finally et throw).
+Go peut s'interfacer avec des bibliothèques en C/C++, des développeurs tiers ayant déjà développé des bindings pour SDL et MySQL.
+Go définit un format de code standard (au niveau des indentations, et de la présentation des structures de contrôle) et fournit un outil pour l'appliquer (go fmt).
+Go propose également un système de documentation à partir du code et un framework de test.
+L'unité de compilation de go est le package qui est représenté dans l'implémentation standard par un répertoire et les fichiers directement contenus dans ce répertoire.
+L'import d'un package se fait par son chemin d'importation et peut préciser soit une bibliothèque standard, soit également des packages tiers installés dans des dépôts de sources distants (actuellement supporté : dépôt sous svn, git, mercurial et bazaar).
